@@ -1,0 +1,164 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior:  smooth;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+h1{
+  color: white;
+  font-weight: bold;
+}
+h2{
+  color: white;
+}
+h3{
+  color: white;
+}
+.navigation{
+  position: fixed;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+  background: rgba(0,0,0,0.6);
+  border-bottom: 1px solid #fff;
+}
+
+.nav-list ul{
+  list-style: none;
+}
+.nav-list ul li{
+  margin: 0px 5px;
+  padding: 0px 5px;
+  display: inline-block;
+
+}
+
+.nav-list ul li a::after{
+  content: '';
+  display: block;
+  width: 0%;
+  height: 1.7px;
+  margin: auto;
+  background: #2E8B57;
+  transition: 0.4s;
+}
+.nav-list ul li a:hover::after{
+ width:  100%;
+
+}
+
+.header{
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://cdn.discordapp.com/attachments/853657421024198698/853657478394413066/ht_bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.header h1{
+  font-size: 54px;
+}
+.news{
+  height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(https://cdn.discordapp.com/attachments/853657421024198698/853670456090296320/Screenshot_101.png);
+  background-position: center;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+.h1-con{
+  text-align: center;
+  padding: 8vh;
+
+}
+
+.join{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://cdn.discordapp.com/attachments/853657421024198698/853668040767176724/ht_bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.join .button a{
+  margin: 18px;
+  padding: 10px 15px;
+  border: 1.7px solid #2E8B57;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.join .button a:hover{
+  background: #2E8B57;
+  border: none;
+}
+
+.contact{
+
+  height: 190vh;
+  width: 100%;
+  background-image: url(https://www.xmple.com/wallpaper/gradient-green-blue-linear-1920x1080-c2-7fffd4-3cb371-a-30-f-14.svg);
+  background-size: cover;
+  background-position: center;
+}
+.contact-holder{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow: 30%;
+}
+.card{
+  padding: 25px;
+
+}
+
+.card:hover{
+
+}
+.info{
+  height: 300px;
+  transition: 0.4s;
+}
+.info:hover{
+  box-shadow: 3px 8px 6px 8px #888888;
+  padding: 5px;
+  cursor: pointer;
+}
+.info-h{
+  padding:70% 5px;
+
+}
+.kakashi{
+  background-image: url(https://cdn.discordapp.com/attachments/853657421024198698/853672160848248862/kakasi.png);
+  background-position: center;
+  background-size: cover;
+}
+
+footer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #212F3D;
+  height: 6vh;
+  width: 100%;
+}
+footer p{
+  padding-right: 2%;
+  color: white;
+}
